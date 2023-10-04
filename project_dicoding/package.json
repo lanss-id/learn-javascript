@@ -1,0 +1,13 @@
+{
+  "name": "project_todolist",
+  "version": "1.0.0",
+  "description": "Project To Do List",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "alan",
+  "license": "ISC"
+}
