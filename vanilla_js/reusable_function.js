@@ -40,11 +40,13 @@ const murid = [
 ]
 const nilaiKKM = murid.filter(skorKkm => skorKkm.nilai > 80)
 console.log(nilaiKKM)
+
 // contoh Array Reduce
 // function ini berguna seperti array map namun hanya menampilkan 1 data saja
 // cocok untuk digunakan ketika membutuhkan nilai keseluruhan
 const jumlahNilai = murid.reduce((acc, skor) => acc + skor.nilai, 0)
 console.log(jumlahNilai)
+
 // contoh Array find
 // mirip seperti array some, namun ini akan mencari dan akan mengembalikan nilai
 const cariMaulana = murid.find(cari => cari.nama === 'Maulana Kayyis')
@@ -62,7 +64,6 @@ console.log(even)
 const bulan = ['Jan', 'Feb', 'Mar', 'Agst']
 bulan.sort()
 console.log(bulan)
-
 // sort data tanpa compare number akan mengurut
 // berdasarkan angka paling awal
 const angka = [1, 1300, 25, 6, 40, 700]
@@ -75,7 +76,6 @@ const compare = (a, b) => {
 console.log(angka.sort(compare))
 // Pada compare function, fungsi akan membandingkan 2 nilai yang akan menghasilkan 3 result yaitu
 // negatif (-), 0, dan positif (+).
-//
 // Jika, negative maka `a` akan diletakkan sebelum `b`
 // Jika, positive maka `b` akan diletakkan sebelum `a`
 // Jika, 0 maka tidak ada perubahan posisi.
@@ -91,8 +91,7 @@ const names = murid.map(name => name.nama)
 // names.forEach(name => {
 //     console.log(`hello ${name}`)
 // })
-
-//coba perulangan
+// coba perulangan
 // const names = ['Harry', 'Ron', 'Jeff', 'Thomas'];
 
 for(let i = 0; i < names.length; i++) {

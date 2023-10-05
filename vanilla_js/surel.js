@@ -8,17 +8,19 @@ class PesanSurel{
 }
 
 class LayananWhatsapp extends PesanSurel {
+    // Overriding constructor
     constructor(pengirim, isBusiness) {
         super(pengirim);
-        this.isBusiness = isBusiness // Overriding constructor
+        this.isBusiness = isBusiness 
     }
+    // Overriding method
     kirimPesan(pesan, penerima) {
         console.log(`[${this.pengirim}] mengirim pesan: "${pesan}" ke [${penerima}] via WhatsApp ${this.isBusiness}`)
     }
 
     kirimBanyakPesan(pesan, paraPenerima) {
         for(const penerima of paraPenerima){
-            super.kirimPesan(pesan, penerima) // Overriding method
+            super.kirimPesan(pesan, penerima) 
         }
     }
 }
