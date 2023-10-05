@@ -17,7 +17,7 @@ try { // coba untuk menjalankan code
         }
     }
     
-    displayStock(coffeStocks)
+    displayStock(coffeStock)
     
     console.log(2+2)
 } catch (error) { // mengangkap apabila terdapat eror dalam code try
