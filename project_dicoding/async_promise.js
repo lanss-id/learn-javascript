@@ -17,8 +17,8 @@ function getUsers(isOfline) {
 }
 
 getUsers(false)
-        .then(users => console.log(users))
-        .catch(error => console.log(error.message))
+    .then(users => console.log(users))
+    .catch(error => console.log(error.message))
 // argument getUsers ketika false akan mengembalikan nilai isOfline = false (tidak offline) yang artinya data bisa diambil
 // argument getUsers ketika true akan mengembalikan nilai isOffline = true (sedang offline) yang artinya data tidak bisa diambil
 

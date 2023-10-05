@@ -32,6 +32,8 @@ cariPengguna(true, usersCallback)
 // dan best practice nya yaitu menggunakan fungsi promisify yang memakai object callback
 
 // ini adalah contoh promisify callback-base dari core module util
+// const { promisify } = require('util'); 
+//code diatas menggunakan common nodejs, jadi tidak bisa terbaca karena package ini menggunakan module type
 import { promisify } from 'util'
 
 function getUsers(isOfline, callback) {
