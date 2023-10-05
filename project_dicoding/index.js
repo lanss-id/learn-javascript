@@ -1,4 +1,5 @@
-// const {coffeStock, isCoffeMacineReady} = require('./state') // import commond nodejs
+// import commond nodejs
+// const {coffeStock, isCoffeMacineReady} = require('./state') 
 
 // const makeCoffe = (type, miligram) => {
 //     if(coffeStock[type] >= miligram){
@@ -10,7 +11,8 @@
 
 import {coffeStock, isCoffeMacineReady} from "./state.js";
 
-try { // coba untuk menjalankan code
+try { 
+    // coba untuk menjalankan code
     const displayStock = stock => {
         for(const type in stock){
             console.log(type)
@@ -20,10 +22,12 @@ try { // coba untuk menjalankan code
     displayStock(coffeStock)
     
     console.log(2+2)
-} catch (error) { // mengangkap apabila terdapat eror dalam code try
+} catch (error) { 
+    // mengangkap apabila terdapat eror dalam code try
     console.log(error.name)
     console.log(error.message)
     console.log(error.stack)
-} finally { // akan menjalankan code tak peduli ada eror atau tidak
+} finally { 
+    // akan menjalankan code tak peduli ada eror atau tidak
     console.log(coffeStock)
 }

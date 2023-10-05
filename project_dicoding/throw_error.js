@@ -11,7 +11,8 @@ try{
     const user = JSON.parse(json);
 
     // if(!user.name){
-    //     throw new SyntaxError("'name', is required!"); // trow error line ini tidak muncul karena tidak ada handler dari catch nya
+    //  // trow error line ini tidak muncul karena tidak ada handler dari catch nya
+    //     throw new SyntaxError("'name', is required!"); 
     // }
 
     // kita buat validation error yang lebih spesifik
@@ -29,7 +30,8 @@ try{
 // buat if statement di dalam catch agar trow di line 7 bisa muncul
 } catch (error) {
     if(error instanceof SyntaxError){
-        console.log(`JSON Error: ${error.message}`); // dengan instaceof dapat membuat percabangan bagaimana cara menangani eror
+        // dengan instaceof dapat membuat percabangan bagaimana cara menangani eror
+        console.log(`JSON Error: ${error.message}`); 
     } else if(error instanceof ValidationError){
         console.log(`Invalid data: ${error.message}`)
     } else if(error instanceof ReferenceError){
