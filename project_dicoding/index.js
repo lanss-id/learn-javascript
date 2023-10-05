@@ -16,4 +16,6 @@ const displayStock = stock => {
     }
 }
 
+displayStock(coffeStock)
 
+console.log(2+2)
