@@ -1,0 +1,17 @@
+{
+  "name": "project_nodejs",
+  "version": "1.0.0",
+  "description": "project module learning of dicoding",
+  "main": "index.js",
+  "scripts": {
+    "start-dev": "$env:NODE_ENV='development'; node ./app.js",
+    "start": " $env:NODE_ENV='production'; node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "alan",
+  "license": "ISC",
+  "dependencies": {
+    "events": "^3.3.0",
+    "lodash": "^4.17.21"
+  }
+}
